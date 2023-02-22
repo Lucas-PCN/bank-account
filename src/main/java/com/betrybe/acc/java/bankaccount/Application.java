@@ -14,7 +14,7 @@ public class Application {
     Scanner scanner = new Scanner(System.in);
     AccountNumberFormatter formatter = new AccountNumberFormatter();
 
-    System.out.println("Informe o número da conta:");
+    System.out.println("Informe o número da conta: ");
 
     try {
       int accountNumber = scanner.nextInt();
@@ -22,10 +22,10 @@ public class Application {
 
       System.out.println("Número da conta: " + accountNumber);
     } catch (Exception e) {
-      System.out.println("Número da conta inválido! Apenas números são aceitos.");
+      System.out.println("Número da conta inválido!");
+    } finally {
+      scanner.close();
     }
-    
-    scanner.close();
   }
 
 }
