@@ -6,21 +6,23 @@ import java.util.Scanner;
  * A class.
  */
 public class Application {
+  private static Scanner scanner;
+  private static AccountNumberFormatter formatter;
 
   /**
    * A simple get method.
    */
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    AccountNumberFormatter formatter = new AccountNumberFormatter();
+    scanner = new Scanner(System.in);
+    formatter = new AccountNumberFormatter();
 
-    System.out.println("Informe o número da conta: ");
+    System.out.println("Informe o número da conta:");
 
     try {
       int accountNumber = scanner.nextInt();
       String account = formatter.formatAccountNumber(accountNumber);
 
-      System.out.println("Numero da conta: " + accountNumber);
+      System.out.println("Numero da conta: " + account);
     } catch (Exception e) {
       System.out.println("Numero da conta inválido!");
     } finally {
