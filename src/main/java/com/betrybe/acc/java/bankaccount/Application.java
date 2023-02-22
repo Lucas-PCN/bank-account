@@ -25,7 +25,7 @@ public class Application {
       System.out.println("Número da conta inválido! Apenas números são aceitos.");
     }
     
-    scan.close();
+    scanner.close();
   }
 
 }
