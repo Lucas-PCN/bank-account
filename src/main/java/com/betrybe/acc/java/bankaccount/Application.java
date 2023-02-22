@@ -20,9 +20,9 @@ public class Application {
       int accountNumber = scanner.nextInt();
       String account = formatter.formatAccountNumber(accountNumber);
 
-      System.out.println("Número da conta: " + accountNumber);
+      System.out.println("Numero da conta: " + accountNumber);
     } catch (Exception e) {
-      System.out.println("Número da conta inválido!");
+      System.out.println("Numero da conta inválido!");
     } finally {
       scanner.close();
     }
