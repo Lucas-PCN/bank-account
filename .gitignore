@@ -52,3 +52,5 @@ atlassian-ide-plugin.xml
 # -----
 *.hprof
 *.log
+
+trybe-filter-repo.sh
